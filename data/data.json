@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": "events-app",
+      "name": "Events App",
+      "description": "App to browse and manage events with dynamic routing",
+      "stack": ["Next.js", "Tailwind CSS"],
+      "repo": "https://github.com/luiscmandujanoa/nextjs-events-app",
+      "live": ""
+    }
+  ]
+}
