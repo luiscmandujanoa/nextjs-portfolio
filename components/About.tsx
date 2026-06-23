@@ -10,40 +10,29 @@ const technologies = [
 export function About() {
   return (
     <section id="about" className="max-w-5xl mx-auto px-6 py-20">
-      <h2 className="text-2xl font-semibold mb-6">/ About Me</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-foreground">/ About Me</h2>
 
-      <div className="space-y-4 text-gray-400 leading-relaxed">
+      <div className="space-y-4 text-muted leading-loose">
         <p>
-          I am currently focused on becoming a Software Developer, building
-          modern web applications with Next.js and React.
+          I am currently focused on building modern web applications with
+          Next.js and React, creating clean, functional, and scalable user
+          interfaces while continuously improving my skills through personal
+          projects.
         </p>
 
-        <p>
-          I enjoy creating clean, functional, and scalable user interfaces, and
-          I am constantly improving my skills through personal projects.
-        </p>
+        <p>Technologies I have been working with recently include:</p>
+        <ul className="grid grid-cols-2">
+          {technologies.map((tech) => (
+            <li key={tech} className="text-sm mb-1">
+              <span className="text-accent font-bold">&gt;</span> {tech}
+            </li>
+          ))}
+        </ul>
 
         <p>
           In my spare time, I stay active through exercise, watch football, and
           work on personal projects.
         </p>
-      </div>
-
-      <div className="mt-10">
-        <h3 className="text-sm font-semibold text-gray-500 mb-3">
-          Technologies
-        </h3>
-
-        <div className="flex flex-wrap gap-2">
-          {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="text-sm px-3 py-1 bg-gray-100 rounded-full text-gray-700"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   );
