@@ -1,12 +1,20 @@
 {
-  "projects": [
-    {
-      "id": "events-app",
-      "name": "Events App",
-      "description": "App to browse and manage events with dynamic routing",
-      "stack": ["Next.js", "Tailwind CSS"],
-      "repo": "https://github.com/luiscmandujanoa/nextjs-events-app",
-      "live": ""
-    }
-  ]
+    "projects": [
+        {
+            "id": "events-app",
+            "name": "Events App",
+            "description": "Full-stack app to browse and manage events with dynamic routing, server-side rendering and smooth animations.",
+            "stack": ["Next.js", "Tailwind CSS", "Framer Motion"],
+            "repo": "https://github.com/luiscmandujanoa/nextjs-events-app",
+            "live": "https://nextjs-events-app-delta.vercel.app/"
+        },
+        {
+            "id": "task-manager-app",
+            "name": "Task Manager App",
+            "description": "Task management app with authentication, database persistence and a clean, intuitive interface.",
+            "stack": ["Next.js", "Tailwind CSS", "Prisma", "Clerk"],
+            "repo": "https://github.com/luiscmandujanoa/nextjs-task-manager-app",
+            "live": ""
+        }
+    ]
 }

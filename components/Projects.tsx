@@ -1,47 +1,72 @@
 import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import data from "@/data/projects.json";
 
 export function Projects() {
-  return (
-    <section id="projects" className="max-w-5xl mx-auto px-6 py-20">
-      <h2 className="text-2xl font-semibold mb-10 text-foreground">
-        / Projects
-      </h2>
+    return (
+        <section id="projects" className="bg-background-alt">
+            <div className="mx-auto max-w-5xl px-6 py-20">
+                <h2 className="text-foreground mb-10 font-serif text-3xl font-bold">
+                    / Projects
+                </h2>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        {data.projects.map((project) => (
-          <div
-            key={project.id}
-            className="bg-card rounded-xl p-5 hover:shadow-md transition"
-          >
-            <div className="flex gap-4 text-sm">
-              <a href={project.repo} target="_blank" className="text-accent">
-                <FaGithub size={20} />
-              </a>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {data.projects.map((project) => (
+                        <article
+                            key={project.id}
+                            className="bg-card border-border hover:border-border-strong hover:bg-card-hover flex flex-col rounded-xl border p-6 transition-colors"
+                        >
+                            {/* Header con iconos */}
+                            <div className="mb-6 flex items-center justify-between">
+                                <div className="flex items-center gap-3">
+                                    <a
+                                        href={project.repo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`Ver código de ${project.name} en GitHub`}
+                                        className="text-foreground-secondary hover:text-accent transition-colors"
+                                    >
+                                        <FaGithub size={20} />
+                                    </a>
+                                    {project.live && (
+                                        <a
+                                            href={project.live}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label={`Ver demo de ${project.name}`}
+                                            className="text-foreground-secondary hover:text-accent transition-colors"
+                                        >
+                                            <FiExternalLink size={18} />
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
 
-              {project.live && (
-                <a href={project.live} target="_blank" className="text-accent">
-                  Live
-                </a>
-              )}
+                            {/* Contenido */}
+                            <div className="flex flex-1 flex-col">
+                                <h3 className="text-foreground mb-2 font-serif text-lg font-bold">
+                                    {project.name}
+                                </h3>
+                                <p className="text-foreground-secondary flex-1 text-sm leading-relaxed">
+                                    {project.description}
+                                </p>
+                            </div>
+
+                            {/* Stack */}
+                            <div className="border-border mt-6 flex flex-wrap gap-2 border-t pt-4">
+                                {project.stack.map((tech) => (
+                                    <span
+                                        key={tech}
+                                        className="text-accent bg-accent-subtle rounded px-2 py-0.5 font-mono text-xs"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </article>
+                    ))}
+                </div>
             </div>
-
-            <h3 className="text-lg font-semibold mt-4">{project.name}</h3>
-
-            <p className="text-muted mt-2 text-sm leading-relaxed">
-              {project.description}
-            </p>
-
-            <div className="flex flex-wrap gap-2 mt-4">
-              {project.stack.map((tech) => (
-                <span key={tech} className="text-xs py-1 text-muted">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+        </section>
+    );
 }

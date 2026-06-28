@@ -1,32 +1,61 @@
 @import "tailwindcss";
 
 :root {
+  /* Base */
   --background: #1b2330;
-  --foreground: #e6edf3;
-  --accent: #4da3ff;
-  --border: #334155;
-  --muted: #9ca3af;
+  --background-alt: #151c28;
   --card: #253041;
+  --card-hover: #2d3a4f;
+
+  /* Texto */
+  --foreground: #e6edf3;
+  --foreground-secondary: #a8b5c8;
+  --muted: #5a6a80;
+
+  /* Acento */
+  --accent: #5b8def;
+  --accent-hover: #4a7de0;
+  --accent-subtle: rgba(91, 141, 239, 0.08);
+
+  /* Bordes */
+  --border: #2a3a50;
+  --border-strong: #3d5068;
 }
 
 @theme inline {
+  /* Colores */
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
-  --color-border: var(--border);
-  --color-muted: var(--muted);
+  --color-background-alt: var(--background-alt);
   --color-card: var(--card);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card-hover: var(--card-hover);
 
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-muted: var(--muted);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  /* Fonts */
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-playfair);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* Animaciones */
   --animate-blink: blink 1s step-end infinite;
 }
 
 @keyframes blink {
+
   0%,
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -35,5 +64,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mono), monospace;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif), Georgia, serif;
 }

@@ -1,44 +1,44 @@
 {
-  "experiences": [
-    {
-      "id":"01",
-      "company": "TCS",
-      "jobTitle": "Systems Analyst",
-      "duration": "NOV 2024 - MAY 2025",
-      "desc": [
-        "Designed and supported data integration workflows using Azure Data Factory and Azure Data Lake Storage, aligning technical solutions with business needs. Focused on improving data availability and reliability across systems.",
-        "Optimized SQL queries in Azure Databricks and automated operational tasks using Python and Azure Automation to improve system performance and efficiency."
-      ]
-    },
-    {
-      "id":"02",
-      "company": "Inetum",
-      "jobTitle": "Systems Analyst",
-      "duration": "FEB 2024 - OCT 2024",
-      "desc": [
-        "Developed and maintained Power BI dashboards to support business decision-making and translate requirements into reporting solutions. Collaborated with users to understand needs and deliver functional insights.",
-        "Managed Azure user access and contributed to process improvements by optimizing data workflows and automating tasks using Python, enhancing operational efficiency."
-      ]
-    },
-    {
-      "id":"03",
-      "company": "Valtx",
-      "jobTitle": "Systems Analyst",
-      "duration": "JUL 2023 - JAN 2024",
-      "desc": [
-        "Supported business analysis by developing Power BI reports and gathering requirements for data-driven solutions. Ensured information was structured and accessible for decision-making.",
-        "Worked on ETL processes using SSIS and Azure Data Factory, while optimizing SQL queries and automating repetitive tasks with Python to improve efficiency."
-      ]
-    },
-    {
-      "id":"04",
-      "company": "BBVA",
-      "jobTitle": "Systems Analyst",
-      "duration": "AUG 2021 - SEP 2022",
-      "desc": [
-        "Developed dashboards in Power BI and Looker Studio to support business decision-making. Built ETL processes using Pentaho Data Integration.",
-        "Wrote SQL queries in SQL Server and Oracle and performed data analysis using Excel to support reporting and operational needs."
-      ]
-    }
-  ]
+    "experiences": [
+        {
+            "id": "01",
+            "company": "TCS",
+            "jobTitle": "Systems Analyst",
+            "duration": "Nov 2024 – May 2025",
+            "desc": [
+                "Designed and supported data integration workflows using Azure Data Factory and Azure Data Lake Storage, improving data availability and reliability across systems.",
+                "Optimized SQL queries in Azure Databricks and automated operational tasks using Python and Azure Automation, reducing manual effort and improving system performance."
+            ]
+        },
+        {
+            "id": "02",
+            "company": "Inetum",
+            "jobTitle": "Systems Analyst",
+            "duration": "Feb 2024 – Oct 2024",
+            "desc": [
+                "Developed and maintained Power BI dashboards to support business decision-making, collaborating with stakeholders to translate requirements into actionable reporting solutions.",
+                "Managed Azure user access and improved operational efficiency by optimizing data workflows and automating repetitive tasks using Python."
+            ]
+        },
+        {
+            "id": "03",
+            "company": "Valtx",
+            "jobTitle": "Systems Analyst",
+            "duration": "Jul 2023 – Jan 2024",
+            "desc": [
+                "Built Power BI reports and gathered business requirements to deliver data-driven solutions, ensuring information was structured and accessible for decision-making.",
+                "Developed ETL processes using SSIS and Azure Data Factory, optimized SQL queries, and automated repetitive tasks with Python to improve workflow efficiency."
+            ]
+        },
+        {
+            "id": "04",
+            "company": "BBVA",
+            "jobTitle": "Systems Analyst",
+            "duration": "Aug 2021 – Sep 2022",
+            "desc": [
+                "Created dashboards in Power BI and Looker Studio to support business decision-making, and built ETL processes using Pentaho Data Integration.",
+                "Wrote SQL queries in SQL Server and Oracle, and performed data analysis using Excel to support reporting and operational needs."
+            ]
+        }
+    ]
 }
