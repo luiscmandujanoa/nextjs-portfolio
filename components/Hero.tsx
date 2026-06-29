@@ -23,13 +23,13 @@ export function Hero() {
                         href="#projects"
                         className="bg-accent text-background hover:bg-accent-hover inline-block rounded-lg px-5 py-2.5 font-sans font-medium transition-colors"
                     >
-                        Ver proyectos
+                        View projects
                     </a>
                     <a
                         href="#contact"
                         className="border-border text-foreground-secondary hover:text-accent hover:border-accent inline-block rounded-lg border px-5 py-2.5 font-sans transition-colors"
                     >
-                        Contacto
+                        Contact me
                     </a>
                 </div>
             </div>

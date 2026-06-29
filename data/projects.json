@@ -14,7 +14,7 @@
             "description": "Task management app with authentication, database persistence and a clean, intuitive interface.",
             "stack": ["Next.js", "Tailwind CSS", "Prisma", "Clerk"],
             "repo": "https://github.com/luiscmandujanoa/nextjs-task-manager-app",
-            "live": ""
+            "live": "https://nextjs-task-manager-app-seven.vercel.app/"
         }
     ]
 }
