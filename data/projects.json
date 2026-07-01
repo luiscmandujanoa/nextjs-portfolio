@@ -15,6 +15,14 @@
             "stack": ["Next.js", "Tailwind CSS", "Prisma", "Clerk"],
             "repo": "https://github.com/luiscmandujanoa/nextjs-task-manager-app",
             "live": "https://nextjs-task-manager-app-seven.vercel.app/"
+        },
+        {
+            "id": "blog-api",
+            "name": "Blog API",
+            "description": "RESTful API with authentication, JWT, role-based access control and full CRUD operations.",
+            "stack": ["NestJS", "TypeORM", "PostgreSQL", "Docker"],
+            "repo": "https://github.com/luiscmandujanoa/nestjs-blog-api",
+            "live": ""
         }
     ]
 }
