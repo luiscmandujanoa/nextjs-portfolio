@@ -19,10 +19,10 @@
         {
             "id": "blog-api",
             "name": "Blog API",
-            "description": "RESTful API with authentication, JWT, role-based access control and full CRUD operations.",
-            "stack": ["NestJS", "TypeORM", "PostgreSQL", "Docker"],
+            "description": "RESTful API with JWT auth, RBAC, comments, image uploads, caching, automated testing, and monitoring, deployed to production.",
+            "stack": ["NestJS", "TypeORM", "PostgreSQL", "Redis", "Docker"],
             "repo": "https://github.com/luiscmandujanoa/nestjs-blog-api",
-            "live": ""
+            "live": "https://nestjs-blog-api-production.up.railway.app/api"
         }
     ]
 }
